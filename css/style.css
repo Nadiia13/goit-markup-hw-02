@@ -1,15 +1,27 @@
 
 :root{
     --main-background: #FFFFFF;
-    --main-font: 'Roboto';
+    --main-font: 'Roboto', sans-serif;
     --main-titlet-color: #212121;
     --main-text-color: #757575;
     --main-accent-color: #2196F3;
+    --main-photo-background: #EEEEEE;
+    --second-logo-color:#000000;
+    --button-color: #F5F4FA;
+    --color: #FFFFFF 60 %;
+    --color-section: #2F303A;
+    --line-color: #ECECEC;
+
+
+
+
 }
 
-.body{
-    --main-font:var(--main-font) ;
+body{
+    font-family: var(--main-font);
     background: var(--main-background) ;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 .list{
@@ -42,7 +54,6 @@
     font-size: 26px;
     line-height: 1.20;
     color: #000000;
-    letter-spacing: 0.03em;
     text-decoration: none;
 }
 
@@ -57,13 +68,14 @@
 
 .header-item{
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-titlet-color) ;
+    color: var(--main-title-color) ;
 }
 .header-item:hover,
-.header-item:focus{
+.header-item:focus,
+.header-contact:hover,
+.header-contact:focus{
     color: var(--main-accent-color) ;
 }
 
@@ -72,6 +84,17 @@
 .header-item:focus{
     color: var(--main-accent-color);
 
+}
+
+.current{
+    color: var(--main-accent-color);
+}
+
+.header-contact{
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
 }
 
 /*Main*/
@@ -83,6 +106,7 @@
 }
 
 .hero-title{
+    font-family: var(--main-font);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -92,13 +116,13 @@
 }
 
 .hero-button{
-    font-family: 'Roboto';
+    font-family: var(--main-font);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     text-align: center;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--main-background);
+    background-color: var(--main-accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -112,19 +136,15 @@
 .description-title{
     
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     color: var(--main-titlet-color);
     text-transform: uppercase;
 
 }
 
 .description-text{
-    font-weight: 400;
-    font-size: 14px;
+   
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color:var(--main-text-color) ;
 }
 
@@ -139,13 +159,14 @@
 }
 
 /*Team*/
-
+.team{
+    background-color: var(--button-color);
+}
 .team-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     color:var(--main-titlet-color) ;
 }
 
@@ -154,68 +175,83 @@
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
     color:var(--main-titlet-color) ;
 }
 .team-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03em;
     color: var(--main-text-color) ;
 
 }
 
 /*Footer*/
 
-.footer{
+footer{
     background-color: #212121;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
- .adress-street{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+.footer-logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.20;
+    color: var(--main-background);
     letter-spacing: 0.03em;
-    color: #FFFFFF;
- }
+    text-decoration: none;
+}
+
+.adress-street{
+    font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--main-background);
+}
+ 
+
 
  .adress-mail{
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
  }
 
  .adress-phone{
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
  }
+
+.adress-street:hover, 
+.adress-mail:hover,
+.adress-phone:hover,
+.adress-street:focus,
+.adress-mail:focus,
+.adress-phone:focus{
+    color: var(--main-accent-color);
 
  /*Portfolio*/
 
  /*Button*/
 
- .body{
+ body{
     font-family: 'Roboto' ;
     background-color #FFFFFF;
  }
 
 
  .button-title{
+    font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--main-titlet-color);
-    background: #F5F4FA;
+    background: var(--button-color);
     border-radius: 4px;
  }
  
