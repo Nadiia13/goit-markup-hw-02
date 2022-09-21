@@ -233,31 +233,26 @@ footer{
 .adress-mail:focus,
 .adress-phone:focus{
     color: var(--main-accent-color);
+}       
 
  /*Portfolio*/
 
  /*Button*/
 
- body{
-    font-family: 'Roboto' ;
-    background-color #FFFFFF;
- }
-
-
- .button-title{
+.button-title{
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height:1,62;
+    text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-titlet-color);
-    background: var(--button-color);
-    border-radius: 4px;
- }
+}
  
- .button-title{
+ 
+.button-title{
     cursor: pointer;
- }
+}
 
  .button-title:hover,
  .button-title:focus{
@@ -266,7 +261,7 @@ footer{
 
  /*Services*/
 
- .services-title{
+.services-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
@@ -274,7 +269,7 @@ footer{
     color: var(--main-titlet-color);
  }
 
- .services-text{
+.services-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
